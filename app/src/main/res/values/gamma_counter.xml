@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dose">Dawka pochłonięta [mSv]</string>
+    <string name="activity">Aktywność [GBq]</string>
+    <string name="time">Czas ekspozycji [h]</string>
+    <string name="distance">Odległość od źródła [m]</string>
+    <string name="coverFold">Krotność osłony</string>
+
+    <string-array name="gamma_counter_elements_to_choose">
+        <item>Dawka pochłonięta w powietrzu</item>
+        <item>Aktywność źródła</item>
+        <item>Czas ekspozycji</item>
+        <item>Odległość od źródła</item>
+        <item>Krotność osłony</item>
+    </string-array>
+    
+</resources>

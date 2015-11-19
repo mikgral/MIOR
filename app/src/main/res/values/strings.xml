@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings for MainActivity -->
+    <string name="app_name">MIOR</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="titleTextView">MIOR</string>
+    <string name="subtitleTextView">MULTIMEDIALNY INSPEKTOR OCHRONY RADIOLOGICZNEJ</string>
+    <string name="mainButton1">PRZEPISY I POJĘCIA</string>
+    <string name="mainButton2">OBLICZENIA</string>
+    <string name="mainButton3">WAŻNE NUMERY ALARMOWE</string>
+    <string name="mainButton4">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
+    <string name="mainButton5">DAWKI OD PROMIENIOWANIA X</string>
+    <string name="mainButton6">WŁASNOŚCI PROMIENIOWANIA</string>
+    <string name="mainButton7">WAŻNE NUMERY ALARMOWE</string>
+    <string name="mainButton8">SŁOWNICZEK POJĘĆ</string>
+    <!-- Strings for DosesDefinitions -->
+    <string name="title_activity_doses_definitions">DEFINICJE DAWEK</string>
+    <string name="titleDosesDefinitionsTextView">Definicje dawek</string>
+    <string name="subtitleDosesDefinitionsTextView">pokaż definicję dawki:</string>
+    <string name="dosesDefinitionsButton1">POCHŁONIĘTEJ</string>
+    <string name="dosesDefinitionsButton2">RÓWNOWAŻNEJ</string>
+    <string name="dosesDefinitionsButton3">SKUTECZNEJ</string>
+    <string name="dosesDefinitionsButton4">LET</string>
+    <!-- Strings for EmergencyNumbers -->
+    <string name="title_activity_emergency_numbers">WAŻNE NUMERY ALARMOWE</string>
+    <string name="titleEmergencyNumbersTextView">Ważne numery alarmowe</string>
+    <string name="subtitleEmergencyNumbersTextView">połącz z:</string>
+    <string name="callFireBrigadeButton">STRAŻ POŻARNA</string>
+    <string name="callAmbulanceButton">POGOTOWIE RATUNKOWE</string>
+    <string name="callPoliceButton">POLICJA</string>
+    <string name="callCEZARButton">CENTRUM DO SPRAW ZDARZEŃ RADIACYJNYCH</string>
+    <string name="fireBrigadeNumber">998</string>
+    <string name="ambulanceNumber">999</string>
+    <string name="policeNumber">997</string>
+    <string name="cezarNumber">2219430</string>
+    <!-- Strings for RadiationProperties -->
+    <string name="title_activity_radiation_properties">WŁASNOŚCI PROMIENIOWANIA</string>
+    <string name="titleRadiationPropertiesTextView">Własności promieniowania</string>
+    <string name="subtitleRadiationPropertiesTextView">pokaż własności promieniowania:</string>
+    <string name="radiationPropertiesButton1">Alfa</string>
+    <string name="radiationPropertiesButton2">Beta</string>
+    <string name="radiationPropertiesButton3">Gamma</string>
+    <string name="radiationPropertiesButton4">Neutrony</string>
+    <!-- Strings for InternalExposure -->
+    <string name="title_activity_internal_exposure">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
+    <string name="titleInternalExposureTextView">Radiologiczne narażenie wewnętrzne</string>
+    <string name="chooseAtomTextView">Wybierz pierwiastek</string>
+    <!-- String for RulesAndTheory -->
+    <string name="title_activity_rules_and_theory">PRZEPISY I POJĘCIA</string>
+    <string name="titleRulesAndTheoryTextView">Przepisy i pojęcia</string>
+    <string name="dosesDefinitionsMainButton">DEFINICJE DAWEK</string>
+    <string name="doseLimitsMainButton">DAWKI GRANICZNE</string>
+    <string name="wasteMainButton">ODPADY</string>
+    <string name="glossaryMainButton">SŁOWNICZEK POZOSTAŁYCH POJĘĆ</string>
+    <!-- Strings for Calculations -->
+    <string name="title_activity_calculations">OBLICZENIA</string>
+    <string name="titleCalculationsTextView">Obliczenia</string>
+    <string name="unitCounterMainButton">PRZELICZNIK JEDNOSTEK</string>
+    <string name="internalExposureMainButton">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
+    <string name="gammaCounterMainButton">KALKULATOR GAMMA</string>
+    <!-- Strings for UnitCounter -->
+    <string name="title_activity_unit_counter">PRZELICZNIK JEDNOSTEK</string>
+    <string name="mainUnitCalculationTextView">Wybierz rodzaje dawki</string>
+    <string name="enterAmountUnitCounterTextView">Wpisz wartość:</string>
+    <string name="chooseUnitTextView">Wybierz jednostkę</string>
+    <string name="calculateButton">OBLICZ</string>
+    <string name="defaultNumberInEditText">0.0</string>
+    <!-- Strings for GammaCounter -->
+    <string name="title_activity_gamma_counter">KALKULATOR GAMMA</string>
+    <string name="titleGammaCounterTextView">Kalkulator gamma</string>
+    <string name="subtitleGammaCounterTextView">wybierz parametr do policzenia:</string>
+    <string name="enterValuesGammaCounterTextView">Wprowadź wartości poszczególnych zmiennych</string>
+    <string name="countGammaButton">OBLICZ</string>
+    <string name="defaultValueInEditTexts">0</string>
+    <string name="symbol1TextView">Pierwiastek</string>
+    <!-- String for InternalExposureForGeneralPopulation -->
+    <string name="title_activity_internal_exposure_for_general_population">OGÓŁ POPULACJI</string>
+    <string name="titleInternalExposureForGP">Radiologiczne narażenie wewnętrzne dla ogółu ludności</string>
+    <string name="chooseWayOfAbsorbingTextView">Wybierz drogę absorbcji</string>
+    <string name="chooseAtomIETextView">Wybierz wchłonięty pierwiastek</string>
+    <string name="enterActivityTextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
+    <string name="countInternalExposureButton">OBLICZ</string>
+    <string name="title_activity_internal_exposure_for_employees">InternalExposureForEmployees</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mikolajgralczyk.mior" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DosesDefinitions"
+            android:label="@string/title_activity_doses_definitions"
+            android:parentActivityName=".RulesAndTheory" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.RulesAndTheory" />
+        </activity>
+        <activity
+            android:name=".EmergencyNumbers"
+            android:label="@string/title_activity_emergency_numbers"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RadiationProperties"
+            android:label="@string/title_activity_radiation_properties"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InternalExposure"
+            android:label="@string/title_activity_internal_exposure"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RulesAndTheory"
+            android:label="@string/title_activity_rules_and_theory"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Calculations"
+            android:label="@string/title_activity_calculations"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UnitCounter"
+            android:label="@string/title_activity_unit_counter"
+            android:parentActivityName=".Calculations" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.Calculations" />
+        </activity>
+        <activity
+            android:name=".GammaCounter"
+            android:label="@string/title_activity_gamma_counter"
+            android:parentActivityName=".Calculations" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.Calculations" />
+        </activity>
+        <activity
+            android:name=".InternalExposureForGeneralPopulation"
+            android:label="@string/title_activity_internal_exposure_for_general_population"
+            android:parentActivityName=".InternalExposure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.InternalExposure" />
+        </activity>
+        <activity
+            android:name=".InternalExposureForEmployees"
+            android:label="@string/title_activity_internal_exposure_for_employees"
+            android:parentActivityName=".InternalExposure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.mior.InternalExposure" />
+        </activity>
+    </application>
+
+</manifest>

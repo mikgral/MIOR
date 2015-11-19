@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_types">
+        <item>Dawka pochłonięta</item>
+        <item>Równoważnik dawki</item>
+        <item>Dawka ekspozycyjna</item>
+        <item>Dawka w powietrzu</item>
+    </string-array>
+
+    <string-array name="absorbed_dose">
+        <item>rad</item>
+        <item>mrad</item>
+        <item>Gy</item>
+        <item>mGy</item>
+        <item>µGy</item>
+    </string-array>
+
+    <string-array name="equivalent_dose">
+        <item>rem</item>
+        <item>mrem</item>
+        <item>Sv</item>
+        <item>mSv</item>
+        <item>µSv</item>
+    </string-array>
+
+    <string-array name="exposure_dose">
+        <item>R</item>
+        <item>mR</item>
+        <item>C/kg</item>
+        <item>mC/kg</item>
+        <item>µC/kg</item>
+    </string-array>
+
+    <string-array name="in_air_dose">
+        <item>Gy</item>
+        <item>cGy</item>
+        <item>mGy</item>
+        <item>Sv</item>
+        <item>mSv</item>
+        <item>µSv</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titleAlfa">Alfa</string>
+    <string name="titleBeta">Beta</string>
+    <string name="titleGamma">Gamma</string>
+    <string name="titleNeutrons">Neutrony</string>
+
+</resources>
