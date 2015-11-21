@@ -16,7 +16,8 @@
         android:id="@+id/titleInternalExposureForGP"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal|center_vertical"/>
+        android:gravity="center_horizontal|center_vertical"
+        android:textStyle="bold"/>
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -27,8 +28,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/titleInternalExposureForGP">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/chooseAtomTextView"
+                android:text="@string/chooseAtomIETextView"
                 android:id="@+id/chooseAtomTextView"
                 android:layout_gravity="center_horizontal"/>
 

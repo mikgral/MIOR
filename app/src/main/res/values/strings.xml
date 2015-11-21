@@ -45,7 +45,8 @@
     <!-- Strings for InternalExposure -->
     <string name="title_activity_internal_exposure">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
     <string name="titleInternalExposureTextView">Radiologiczne narażenie wewnętrzne</string>
-    <string name="chooseAtomTextView">Wybierz pierwiastek</string>
+    <string name="buttonForIEGP">OGÓŁ LUDNOŚCI</string>
+    <string name="buttonForIEE">PRACOWNICY</string>
     <!-- String for RulesAndTheory -->
     <string name="title_activity_rules_and_theory">PRZEPISY I POJĘCIA</string>
     <string name="titleRulesAndTheoryTextView">Przepisy i pojęcia</string>
@@ -81,7 +82,12 @@
     <string name="chooseAtomIETextView">Wybierz wchłonięty pierwiastek</string>
     <string name="enterActivityTextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
     <string name="countInternalExposureButton">OBLICZ</string>
-    <string name="title_activity_internal_exposure_for_employees">InternalExposureForEmployees</string>
-    <string name="hello_world">Hello world!</string>
+    <!-- String for InternalExposureForEmployees -->
+    <string name="title_activity_internal_exposure_for_employees">PRACOWNICY</string>
+    <string name="titleInternalExposureForE">Radiologiczne narażenie wewnętrzne dla pracowników</string>
+    <string name="chooseWayOfAbsorbingForETextView">Wybierz drogę absorbcji</string>
+    <string name="chooseAtomForETextView">Wybierz wchłonięty pierwiastek</string>
+    <string name="enterActivityForETextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
+    <string name="countInternalExposureForEButton">OBLICZ</string>
 
 </resources>

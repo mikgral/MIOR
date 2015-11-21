@@ -5,6 +5,13 @@
         <item>Droga pokarmowa</item>
         <item>Droga oddechowa</item>
     </string-array>
+    
+    <string name="introductionToIE">
+        <![CDATA[
+            "<font size=\"5\"><font color=\"red\"><p align=\"center\"><b>UWAGA!</b></p>\n"
+            "<p align="justify">W tej części aplikacji liczona jest <b>obciążająca dawka skuteczna</b> od wniknięcia nuklidu drogą pokarmową bądź oddechową dla ogółu ludności bądź dla pracowników (należy wybrać poniżej właściwą opcję). Liczenie odbywa się na podstawie Rozporządzenia RM z dnia 18 stycznia 2015r. w sprawie dawek granicznych promieniowania jonizującego, dlatego też istnieją pewne ograniczenia w wyznaczaniu poprawnej dawki. Narażenie jest liczone domyślnie dla osób w wieku powyżej 18 lat. Więcej informacji znajduje się <a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU20050200168">na tej stronie.</a></p></font></font>"
+            ]]>
+    </string>
 
 
 </resources>

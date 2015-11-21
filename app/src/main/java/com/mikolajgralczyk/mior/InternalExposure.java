@@ -3,15 +3,22 @@ package com.mikolajgralczyk.mior;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class InternalExposure extends ActionBarActivity {
 
     private Button mGeneralPopulationButton;
+    private Button mEmployeesButton;
+    private WebView mIntroductionToIEWebView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +26,13 @@ public class InternalExposure extends ActionBarActivity {
         setContentView(R.layout.activity_internal_exposure);
 
         initializeButtons();
+        initializeIntroduction();
     }
 
     private void initializeButtons() {
         mGeneralPopulationButton = (Button) findViewById(R.id.generalPopulationButton);
+        mEmployeesButton = (Button) findViewById(R.id.employeesButton);
+
         mGeneralPopulationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +42,27 @@ public class InternalExposure extends ActionBarActivity {
 
             }
         });
+
+        mEmployeesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent startIEEActivity = new Intent(InternalExposure.this, InternalExposureForEmployees.class);
+                startActivityForResult(startIEEActivity, 0);
+
+            }
+        });
     }
+
+    private void initializeIntroduction() {
+        mIntroductionToIEWebView = (WebView) findViewById(R.id.introductionToIEWebView);
+        WebSettings websettings = mIntroductionToIEWebView.getSettings();
+        websettings.setDefaultTextEncodingName("utf-8");
+        mIntroductionToIEWebView.loadData(getString(R.string.introductionToIE), "text/html; charset=utf-8", null);
+
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
