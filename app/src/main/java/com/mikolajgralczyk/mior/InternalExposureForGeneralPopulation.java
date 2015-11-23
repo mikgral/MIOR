@@ -141,7 +141,7 @@ public class InternalExposureForGeneralPopulation extends ActionBarActivity {
                     } else if (answer.equals("null")) {
 
                     } else {
-                        mAnswerOfInternalExposure.setText(answer);
+                        mAnswerOfInternalExposure.setText("Obciążająca dawka skuteczna wynosi " +answer+ " Sv");
                     }
                 }
 

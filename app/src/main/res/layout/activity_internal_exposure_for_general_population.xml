@@ -23,7 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView4"
-        android:layout_below="@+id/titleInternalExposureForGP">
+        android:layout_below="@+id/titleInternalExposureForGP"
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:orientation="vertical"

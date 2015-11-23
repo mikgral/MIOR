@@ -45,10 +45,10 @@
         <activity
             android:name=".InternalExposure"
             android:label="@string/title_activity_internal_exposure"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".Calculations" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.MainActivity" />
+                android:value="com.mikolajgralczyk.mior.Calculations" />
         </activity>
         <activity
             android:name=".RulesAndTheory"

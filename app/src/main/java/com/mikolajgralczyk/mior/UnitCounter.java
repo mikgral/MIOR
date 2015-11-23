@@ -23,7 +23,6 @@ public class UnitCounter extends ActionBarActivity {
     private Spinner mSpinner1UnitCounter;
     private Spinner mSpinner2UnitCounter;
     private EditText mEnterAmountEditText;
-    private Button mCalculateUnitButton;
 
     private TextView mUnitTextView1;
     private TextView mUnitTextView2;
@@ -207,7 +206,7 @@ public class UnitCounter extends ActionBarActivity {
 
         else if (selectedItem.equals("mrad")) {
 
-            convertToRadAndUpdateTextViews(quantityToConvert, 0.001d);
+            convertToRadAndUpdateTextViews(quantityToConvert, 1000d);
         }
 
         else if (selectedItem.equals("Gy")) {
@@ -237,7 +236,7 @@ public class UnitCounter extends ActionBarActivity {
 
         else if (selectedItem.equals("mrem")) {
 
-            convertToRemAndUpdateTextViews(quantityToConvert, 0.001d);
+            convertToRemAndUpdateTextViews(quantityToConvert, 1000d);
         }
 
         else if (selectedItem.equals("Sv")) {
@@ -267,7 +266,7 @@ public class UnitCounter extends ActionBarActivity {
 
         else if (selectedItem.equals("mR")) {
 
-            convertToRAndUpdateTextViews(quantityToConvert, 0.001d);
+            convertToRAndUpdateTextViews(quantityToConvert, 1000d);
         }
 
         else if (selectedItem.equals("C/kg")) {
@@ -297,12 +296,12 @@ public class UnitCounter extends ActionBarActivity {
 
         else if (selectedItem.equals("cGy")) {
 
-            convertToGyAndUpdateTextViews(quantityToConvert, 0.01d);
+            convertToGyAndUpdateTextViews(quantityToConvert, 100d);
         }
 
         else if (selectedItem.equals("mGy")) {
 
-            convertToGyAndUpdateTextViews(quantityToConvert, 0.001d);
+            convertToGyAndUpdateTextViews(quantityToConvert, 1000d);
         }
 
         else if (selectedItem.equals("Sv")) {
@@ -326,7 +325,7 @@ public class UnitCounter extends ActionBarActivity {
     protected void updateTextViewsFromRad (double quantity) {
 
         updateTargetTextView(quantity, "rad", mUnitTextView1);
-        updateTargetTextView(quantity*0.001d, "mrad", mUnitTextView2);
+        updateTargetTextView(quantity*1000d, "mrad", mUnitTextView2);
         updateTargetTextView(quantity*100.0d, "Gy", mUnitTextView3);
         updateTargetTextView(quantity*0.1d, "mGy", mUnitTextView4);
         updateTargetTextView(quantity*0.0001d, "μGy", mUnitTextView5);
@@ -344,7 +343,7 @@ public class UnitCounter extends ActionBarActivity {
     protected void updateTextViewsFromRem (double quantity) {
 
         updateTargetTextView(quantity, "rem", mUnitTextView1);
-        updateTargetTextView(quantity*0.001d, "mrem", mUnitTextView2);
+        updateTargetTextView(quantity*1000d, "mrem", mUnitTextView2);
         updateTargetTextView(quantity*100.0d, "Sv", mUnitTextView3);
         updateTargetTextView(quantity*0.1d, "mSv", mUnitTextView4);
         updateTargetTextView(quantity*0.0001d, "μSv", mUnitTextView5);
@@ -362,7 +361,7 @@ public class UnitCounter extends ActionBarActivity {
     protected void updateTextViewsFromR (double quantity) {
 
         updateTargetTextView(quantity, "R", mUnitTextView1);
-        updateTargetTextView(quantity*0.001d, "mR", mUnitTextView2);
+        updateTargetTextView(quantity*1000d, "mR", mUnitTextView2);
         updateTargetTextView(quantity*3876.0d, "C/kg", mUnitTextView3);
         updateTargetTextView(quantity*3.876d, "mC/kg", mUnitTextView4);
         updateTargetTextView(quantity*0.003876d, "μC/kg", mUnitTextView5);
@@ -380,8 +379,8 @@ public class UnitCounter extends ActionBarActivity {
     protected void updateTextViewsFromGy (double quantity) {
 
         updateTargetTextView(quantity, "Gy", mUnitTextView1);
-        updateTargetTextView(quantity*0.01d, "cGy", mUnitTextView2);
-        updateTargetTextView(quantity*0.001d, "mGy", mUnitTextView3);
+        updateTargetTextView(quantity*100d, "cGy", mUnitTextView2);
+        updateTargetTextView(quantity*1000d, "mGy", mUnitTextView3);
         updateTargetTextView(quantity*0.000000087d, "Sv", mUnitTextView4);
         updateTargetTextView(quantity*0.00087d, "mSv", mUnitTextView5);
         updateTargetTextView(quantity*0.87d, "µSv", mUnitTextView6);
@@ -401,7 +400,9 @@ public class UnitCounter extends ActionBarActivity {
 
     protected void updateTargetTextView (double quantity, String unit, TextView targetTextView) {
 
-        DecimalFormat df = new DecimalFormat("#.00000");
+        DecimalFormat df = new DecimalFormat();
+        df.setMaximumFractionDigits(6);
+        df.setMinimumFractionDigits(0);
         String targetString = df.format(quantity) + " " + unit;
 
         targetTextView.setText(targetString);

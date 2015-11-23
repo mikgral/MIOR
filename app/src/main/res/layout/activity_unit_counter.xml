@@ -38,7 +38,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:ems="10"
         android:id="@+id/enterAmountEditText"
         android:layout_below="@+id/spinner1UnitCounter"
@@ -65,28 +65,20 @@
         android:layout_alignStart="@+id/enterAmountEditText"
         android:spinnerMode="dropdown"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calculateButton"
-        android:id="@+id/calculateUnitButton"
-        android:layout_below="@+id/spinner2UnitCounter"
-        android:layout_centerHorizontal="true"/>
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/calculateUnitButton"
-        android:layout_centerHorizontal="true"
         android:columnCount="3"
         android:rowCount="3"
-        android:id="@+id/unitCounterGridLayout">
+        android:id="@+id/unitCounterGridLayout"
+        android:layout_below="@+id/spinner2UnitCounter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView1"
             android:layout_row="0"
             android:layout_column="0"/>
@@ -95,7 +87,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView3"
             android:layout_row="1"
             android:layout_column="0"/>
@@ -104,7 +95,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView4"
             android:layout_row="1"
             android:layout_column="2"/>
@@ -113,7 +103,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView5"
             android:layout_row="2"
             android:layout_column="0"/>
@@ -122,7 +111,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView2"
             android:layout_row="0"
             android:layout_column="2"/>
@@ -131,7 +119,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
             android:id="@+id/unitTextView6"
             android:layout_row="2"
             android:layout_column="2"/>

@@ -232,7 +232,16 @@ public class GammaCounter extends ActionBarActivity {
                         } else if (answer.equals("null")) {
 
                         } else {
-                            mAnswerGammaCounterTextView.setText(answer);
+                            if (itemSelectedInMainSpinner.equals("Dawka pochłonięta w powietrzu"))
+                                mAnswerGammaCounterTextView.setText("Dawka pochłonięta w powietrzu wynosi " +answer+ " mSv");
+                            else if (itemSelectedInMainSpinner.equals("Aktywność źródła"))
+                                mAnswerGammaCounterTextView.setText("Aktywność źródła wynosi " +answer+ " GBq");
+                            else if (itemSelectedInMainSpinner.equals("Czas ekspozycji"))
+                                mAnswerGammaCounterTextView.setText("Czas ekspozycji wynosi " +answer+ " h");
+                            else if (itemSelectedInMainSpinner.equals("Odległość od źródła"))
+                                mAnswerGammaCounterTextView.setText("Odległość od źródła wynosi " +answer+ " m");
+                            else if (itemSelectedInMainSpinner.equals("Krotność osłony"))
+                                mAnswerGammaCounterTextView.setText("Krotność osłony wynosi " +answer);
                         }
                     }
 
