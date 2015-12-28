@@ -75,6 +75,8 @@
     <string name="countGammaButton">OBLICZ</string>
     <string name="defaultValueInEditTexts">0</string>
     <string name="symbol1TextView">Pierwiastek</string>
+    <string name="warningGammaCounterTextView">Uwaga: wynik jest podawany z dokładnością do pięciu miejsc po przecinku.
+    Jeżeli wynik będzie mniejszy od 10^-5, pojawi się domyślna wartość 0</string>
     <!-- String for InternalExposureForGeneralPopulation -->
     <string name="title_activity_internal_exposure_for_general_population">OGÓŁ POPULACJI</string>
     <string name="titleInternalExposureForGP">Radiologiczne narażenie wewnętrzne dla ogółu ludności</string>
@@ -89,5 +91,6 @@
     <string name="chooseAtomForETextView">Wybierz wchłonięty pierwiastek</string>
     <string name="enterActivityForETextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
     <string name="countInternalExposureForEButton">OBLICZ</string>
+    <string name="title_activity_dictionary">Dictionary</string>
 
 </resources>

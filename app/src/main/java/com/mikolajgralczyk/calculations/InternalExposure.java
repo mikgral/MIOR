@@ -1,16 +1,16 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.calculations;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.TextView;
+
+import com.mikolajgralczyk.mior.R;
 
 
 public class InternalExposure extends ActionBarActivity {

@@ -1,4 +1,4 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.theory;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.mikolajgralczyk.mior.R;
 
 import static java.lang.String.*;
 

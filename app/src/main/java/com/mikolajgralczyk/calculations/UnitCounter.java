@@ -1,4 +1,4 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.calculations;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -12,10 +12,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mikolajgralczyk.mior.R;
+
 import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
 
+    //TODO Dodać wyjątek dla pustego edit text!!!!!!!!!!!!!!
 
 public class UnitCounter extends ActionBarActivity {
 

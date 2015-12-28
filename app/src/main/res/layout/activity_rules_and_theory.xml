@@ -6,7 +6,7 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.mikolajgralczyk.mior.RulesAndTheory">
+                tools:context="com.mikolajgralczyk.theory.RulesAndTheory">
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,5 +52,6 @@
             android:text="@string/glossaryMainButton"
             android:id="@+id/glossaryMainButton"
             android:layout_gravity="center_horizontal"/>
+
     </LinearLayout>
 </RelativeLayout>

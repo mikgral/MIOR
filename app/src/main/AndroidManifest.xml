@@ -1,102 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mikolajgralczyk.mior" >
+<manifest package="com.mikolajgralczyk.mior"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".DosesDefinitions"
+            android:name="com.mikolajgralczyk.theory.DosesDefinitions"
             android:label="@string/title_activity_doses_definitions"
-            android:parentActivityName=".RulesAndTheory" >
+            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.RulesAndTheory" />
+                android:value="com.mikolajgralczyk.theory.RulesAndTheory"/>
         </activity>
         <activity
             android:name=".EmergencyNumbers"
             android:label="@string/title_activity_emergency_numbers"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.MainActivity" />
+                android:value="com.mikolajgralczyk.mior.MainActivity"/>
         </activity>
         <activity
-            android:name=".RadiationProperties"
+            android:name="com.mikolajgralczyk.theory.RadiationProperties"
             android:label="@string/title_activity_radiation_properties"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.MainActivity" />
+                android:value="com.mikolajgralczyk.mior.MainActivity"/>
         </activity>
         <activity
-            android:name=".InternalExposure"
+            android:name="com.mikolajgralczyk.calculations.InternalExposure"
             android:label="@string/title_activity_internal_exposure"
-            android:parentActivityName=".Calculations" >
+            android:parentActivityName="com.mikolajgralczyk.calculations.Calculations">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.Calculations" />
+                android:value="com.mikolajgralczyk.calculations.Calculations"/>
         </activity>
         <activity
-            android:name=".RulesAndTheory"
+            android:name="com.mikolajgralczyk.theory.RulesAndTheory"
             android:label="@string/title_activity_rules_and_theory"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.MainActivity" />
+                android:value="com.mikolajgralczyk.mior.MainActivity"/>
         </activity>
         <activity
-            android:name=".Calculations"
+            android:name="com.mikolajgralczyk.calculations.Calculations"
             android:label="@string/title_activity_calculations"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.MainActivity" />
+                android:value="com.mikolajgralczyk.mior.MainActivity"/>
         </activity>
         <activity
-            android:name=".UnitCounter"
+            android:name="com.mikolajgralczyk.calculations.UnitCounter"
             android:label="@string/title_activity_unit_counter"
-            android:parentActivityName=".Calculations" >
+            android:parentActivityName="com.mikolajgralczyk.calculations.Calculations">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.Calculations" />
+                android:value="com.mikolajgralczyk.calculations.Calculations"/>
         </activity>
         <activity
-            android:name=".GammaCounter"
+            android:name="com.mikolajgralczyk.calculations.GammaCounter"
             android:label="@string/title_activity_gamma_counter"
-            android:parentActivityName=".Calculations" >
+            android:parentActivityName="com.mikolajgralczyk.calculations.Calculations">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.Calculations" />
+                android:value="com.mikolajgralczyk.calculations.Calculations"/>
         </activity>
         <activity
-            android:name=".InternalExposureForGeneralPopulation"
+            android:name="com.mikolajgralczyk.calculations.InternalExposureForGeneralPopulation"
             android:label="@string/title_activity_internal_exposure_for_general_population"
-            android:parentActivityName=".InternalExposure" >
+            android:parentActivityName="com.mikolajgralczyk.calculations.InternalExposure">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.InternalExposure" />
+                android:value="com.mikolajgralczyk.calculations.InternalExposure"/>
         </activity>
         <activity
-            android:name=".InternalExposureForEmployees"
+            android:name="com.mikolajgralczyk.calculations.InternalExposureForEmployees"
             android:label="@string/title_activity_internal_exposure_for_employees"
-            android:parentActivityName=".InternalExposure" >
+            android:parentActivityName="com.mikolajgralczyk.calculations.InternalExposure">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.mior.InternalExposure" />
+                android:value="com.mikolajgralczyk.calculations.InternalExposure"/>
+        </activity>
+        <activity
+            android:name="com.mikolajgralczyk.theory.Dictionary"
+            android:label="@string/title_activity_dictionary"
+            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.theory.RulesAndTheory"/>
         </activity>
     </application>
 

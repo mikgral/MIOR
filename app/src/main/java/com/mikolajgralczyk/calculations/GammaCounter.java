@@ -1,12 +1,7 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.calculations;
 
-// TODO dokończyć odpowiedź wyniku
-
-import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,6 +10,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.mikolajgralczyk.mior.R;
+import com.mikolajgralczyk.mior.SpecificSpinnerAdapter;
+import com.mikolajgralczyk.mior.ValuesForObjectsInSpinner;
 
 import java.text.DecimalFormat;
 
@@ -29,6 +28,7 @@ public class GammaCounter extends ActionBarActivity {
     private TextView mSymbol4TextView;
     private TextView mSymbol5TextView;
     private TextView mAnswerGammaCounterTextView;
+    private TextView mWarningGammaCounterTextView;
 
     private EditText mEnter1AmountGammaCounterEditText;
     private EditText mEnter2AmountGammaCounterEditText;
@@ -73,7 +73,6 @@ public class GammaCounter extends ActionBarActivity {
             new ValuesForObjectsInSpinner("Tl-202", 0.0062d),
             new ValuesForObjectsInSpinner("Hg-203", 0.0031d),
             new ValuesForObjectsInSpinner("Ra-226", 0.0214d),
-
     };
 
 
@@ -82,42 +81,17 @@ public class GammaCounter extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamma_counter);
 
-
         initializeBothSpinners();
         initializeRestWidgets();
         initializeAnswerButton();
-
-/*
-        mTrySpinner = (Spinner) findViewById(R.id.trySpinner);
-        mTryTextView = (TextView) findViewById(R.id.tryTextView);
-
-        SpecificSpinnerAdapter adapter = new SpecificSpinnerAdapter(GammaCounter.this, android.R.layout.simple_spinner_item, obj);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mTrySpinner.setAdapter(adapter);
-        mTrySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ValuesForObjectsInSpinner obj = (ValuesForObjectsInSpinner) (parent.getItemAtPosition(position));
-                mTryTextView.setText(String.valueOf(obj.getValue()));
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-
-        });
-*/
-
     }
 
     private void initializeBothSpinners() {
-
         mMainSpinnerInGammaCounter = (Spinner) findViewById(R.id.mainSpinnerInGammaCounter);
         mChooseAtomGammaSpinner = (Spinner) findViewById(R.id.chooseAtomGammaSpinner);
 
-
-        ArrayAdapter<CharSequence> adapterForMainSpinner = ArrayAdapter.createFromResource(this, R.array.gamma_counter_elements_to_choose, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterForMainSpinner = ArrayAdapter.createFromResource(this,
+                R.array.gamma_counter_elements_to_choose, android.R.layout.simple_spinner_item);
         adapterForMainSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mMainSpinnerInGammaCounter.setAdapter(adapterForMainSpinner);
         mMainSpinnerInGammaCounter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -126,15 +100,13 @@ public class GammaCounter extends ActionBarActivity {
                 itemSelectedInMainSpinner = parent.getItemAtPosition(pos).toString();
                 updateSymbolTextViews(itemSelectedInMainSpinner);
             }
-
             public void onNothingSelected(AdapterView<?> arg0) {
-                // TODO
+                // Intentionally left blank
             }
-
         });
 
-
-        SpecificSpinnerAdapter adapterForChooseAtomSpinner = new SpecificSpinnerAdapter(GammaCounter.this, android.R.layout.simple_spinner_item, obj);
+        SpecificSpinnerAdapter adapterForChooseAtomSpinner = new SpecificSpinnerAdapter(GammaCounter.this,
+                android.R.layout.simple_spinner_item, obj);
         adapterForChooseAtomSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mChooseAtomGammaSpinner.setAdapter(adapterForChooseAtomSpinner);
         mChooseAtomGammaSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -143,32 +115,28 @@ public class GammaCounter extends ActionBarActivity {
                 ValuesForObjectsInSpinner obj = (ValuesForObjectsInSpinner) (parent.getItemAtPosition(pos));
                 valueOfSelectedAtom = obj.getValue();
             }
-
             public void onNothingSelected(AdapterView<?> arg0) {
-                // TODO
+                // Intentionally left blank
             }
-
         });
 
     }
 
     private void initializeRestWidgets() {
-
         mSymbol2TextView = (TextView) findViewById(R.id.symbol2TextView);
         mSymbol3TextView = (TextView) findViewById(R.id.symbol3TextView);
         mSymbol4TextView = (TextView) findViewById(R.id.symbol4TextView);
         mSymbol5TextView = (TextView) findViewById(R.id.symbol5TextView);
         mAnswerGammaCounterTextView = (TextView) findViewById(R.id.answerGammaCounterTextView);
+        mWarningGammaCounterTextView = (TextView) findViewById(R.id.warningGammaCounterTextView);
 
         mEnter1AmountGammaCounterEditText = (EditText) findViewById(R.id.enter1AmountGammaCounterEditText);
         mEnter2AmountGammaCounterEditText = (EditText) findViewById(R.id.enter2AmountGammaCounterEditText);
         mEnter3AmountGammaCounterEditText = (EditText) findViewById(R.id.enter3AmountGammaCounterEditText);
         mEnter4AmountGammaCounterEditText = (EditText) findViewById(R.id.enter4AmountGammaCounterEditText);
-
     }
 
     private void updateSymbolTextViews(String itemSelected) {
-
         if (itemSelected.equals("Dawka pochłonięta w powietrzu")) {
             mSymbol2TextView.setText(R.string.activity);
             mSymbol3TextView.setText(R.string.time);
@@ -213,16 +181,13 @@ public class GammaCounter extends ActionBarActivity {
     }
 
     private void initializeAnswerButton() {
-
         mCountGammaButton = (Button) findViewById(R.id.countGammaButton);
-
         mCountGammaButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
                     try {
                         DecimalFormat df = new DecimalFormat();
-                        df.setMaximumFractionDigits(3);
+                        df.setMaximumFractionDigits(5);
                         df.setMinimumFractionDigits(0);
 
                         String answer = String.valueOf(df.format(count()));
@@ -242,26 +207,20 @@ public class GammaCounter extends ActionBarActivity {
                                 mAnswerGammaCounterTextView.setText("Odległość od źródła wynosi " +answer+ " m");
                             else if (itemSelectedInMainSpinner.equals("Krotność osłony"))
                                 mAnswerGammaCounterTextView.setText("Krotność osłony wynosi " +answer);
-                        }
-                    }
 
-                    catch (java.lang.NullPointerException e) {
-                        Toast.makeText(getApplicationContext(), "Wypełnij brakujące pola!", Toast.LENGTH_SHORT).show();
+                            mWarningGammaCounterTextView.setText(R.string.warningGammaCounterTextView);
+                        }
                     }
 
                     catch (IllegalArgumentException e) {
                         Toast.makeText(getApplicationContext(), "Wypełnij brakujące pola!", Toast.LENGTH_SHORT).show();
                     }
-
-
                 }
             });
 
         }
 
-
     private Double count() {
-
         Double answer = null;
 
         Double symbol1;
@@ -293,54 +252,8 @@ public class GammaCounter extends ActionBarActivity {
             }
         }
 
-//        Double symbol1 = Double.parseDouble(mEnter1AmountGammaCounterEditText.getText().toString());
-//        Double symbol2 = Double.parseDouble(mEnter2AmountGammaCounterEditText.getText().toString());
-//        Double symbol3 = Double.parseDouble(mEnter3AmountGammaCounterEditText.getText().toString());
-//        Double symbol4 = Double.parseDouble(mEnter4AmountGammaCounterEditText.getText().toString());
-
-
-//        else if (editText1 == null || editText2 == null || editText3 == null || editText4 == null) {
-//            Toast.makeText(getApplicationContext(), "Wypełnij brakujące pola!", Toast.LENGTH_SHORT).show();
-//        }
-        else {
-            Toast.makeText(getApplicationContext(), "Wypełnij brakujące pola!", Toast.LENGTH_SHORT).show();
-//            if (itemSelectedInMainSpinner.equals("Dawka pochłonięta w powietrzu")) {
-//                answer = ((valueOfSelectedAtom * symbol1 * symbol2) / (symbol4 * Math.pow(symbol3, 2))) * 0.087;
-//            } else if (itemSelectedInMainSpinner.equals("Aktywność źródła")) {
-//                answer = (symbol1 * 0.087 * symbol4 * Math.pow(symbol3, 2)) / (valueOfSelectedAtom * symbol2);
-//            } else if (itemSelectedInMainSpinner.equals("Czas ekspozycji")) {
-//                answer = (symbol1 * 0.087 * symbol4 * Math.pow(symbol3, 2)) / (valueOfSelectedAtom * symbol2);
-//            } else if (itemSelectedInMainSpinner.equals("Odległość od źródła")) {
-//                answer = Math.sqrt((valueOfSelectedAtom * symbol2 * symbol3) / symbol4 * symbol1 * 0.087);
-//            } else if (itemSelectedInMainSpinner.equals("Krotność osłony")) {
-//                answer = (valueOfSelectedAtom * symbol2 * symbol3) / (symbol1 * 0.087 * Math.pow(symbol4, 2));
-//            }
-        }
+        else Toast.makeText(getApplicationContext(), "Wypełnij brakujące pola!", Toast.LENGTH_SHORT).show();
 
         return answer;
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_gamma_counter, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

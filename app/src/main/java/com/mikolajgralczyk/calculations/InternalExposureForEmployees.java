@@ -1,9 +1,11 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.calculations;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.mikolajgralczyk.mior.R;
 
 
 public class InternalExposureForEmployees extends ActionBarActivity {

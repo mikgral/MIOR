@@ -1,4 +1,4 @@
-package com.mikolajgralczyk.mior;
+package com.mikolajgralczyk.calculations;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.mikolajgralczyk.mior.R;
+import com.mikolajgralczyk.mior.SpecificSpinnerAdapter;
+import com.mikolajgralczyk.mior.ValuesForObjectsInSpinner;
 
 import java.text.DecimalFormat;
 
