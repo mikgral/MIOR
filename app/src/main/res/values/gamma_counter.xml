@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="dose">Dawka pochłonięta [mSv]</string>
+    <string name="dose">Dawka skuteczna na całe ciało [mSv]</string>
     <string name="activity">Aktywność [GBq]</string>
     <string name="time">Czas ekspozycji [h]</string>
     <string name="distance">Odległość od źródła [m]</string>
     <string name="coverFold">Krotność osłony</string>
 
     <string-array name="gamma_counter_elements_to_choose">
-        <item>Dawka pochłonięta w powietrzu</item>
+        <item>Dawka skuteczna na całe ciało</item>
         <item>Aktywność źródła</item>
         <item>Czas ekspozycji</item>
         <item>Odległość od źródła</item>
         <item>Krotność osłony</item>
     </string-array>
-    
+
+    <string name="doseAnswer1">Przy założeniu, że narażeniu podlega całe ciało, dawka skuteczna wynosi \</string>
+    <string name="doseAnswer2">, natomiast dawka pochłonięta w powietrzu wynosi \</string>
+    <string name="activityAnswer">Aktywność źródła wynosi \</string>
+    <string name="timeAnswer">Czas ekspozycji wynosi \</string>
+    <string name="distanceAnswer">Odległość od źródła wynosi \</string>
+    <string name="coverFoldAnswer">Krotność osłony wynosi \</string>
+
+    <string name="over20mSvInfo">Zakładając, że czas ekspozycji jest podany w godzinach na tydzień,
+        w zadanych warunkach nikt nie powinien przebywać.</string>
+    <string name="categoryAInfo">Zakładając, że czas ekspozycji jest podany w godzinach na tydzień,
+        w zadanych warunkach mogą pracować tylko pracownicy kategorii A.</string>
+    <string name="categoryBInfo">Zakładając, że czas ekspozycji jest podany w godzinach na tydzień,
+        w zadanych warunkach mogą pracować zarówno pracownicy kategorii A, jak i B.</string>
+    <string name="generalPopulationInfo">Zakładając, że czas ekspozycji jest podany w godzinach na tydzień,
+        w zadanych warunkach może przebywać każdy człowiek z ogółu ludności.</string>
+
+    <string name="coverFoldInfo">Na podstawie wartości krotności, można wyznaczyć grubość osłony
+        korzystając z wykresów zamieszczonych w polskiej normie PN-86/J-80001</string>
+
+    <string name="infoAboutZone1">Teren kontrolowany, w którym może przebywać pracownik katrgorii A,
+        zawiera się w przediale promienia od \</string>
+    <string name="infoAboutZone2">\u0020 do \</string>
+    <string name="infoAboutZone3">. Natomiast teren nadzorowany, w którym może przebywać pracownik
+        kategorii B, zawiera się w promieniu od \</string>
+    <string name="infoAboutZone4">\u0020 od źródła</string>
 </resources>

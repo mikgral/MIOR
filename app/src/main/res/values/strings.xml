@@ -45,15 +45,16 @@
     <!-- Strings for InternalExposure -->
     <string name="title_activity_internal_exposure">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
     <string name="titleInternalExposureTextView">Radiologiczne narażenie wewnętrzne</string>
-    <string name="buttonForIEGP">OGÓŁ LUDNOŚCI</string>
+    <!-- TODO POPRAWIĆ NAZWY DLA INTERNALEXPOSURE I WYKASOWAĆ buttonForIEE -->
+    <string name="buttonForIEGP">PRZEJDŹ DO OBLICZEŃ</string>
     <string name="buttonForIEE">PRACOWNICY</string>
     <!-- String for RulesAndTheory -->
     <string name="title_activity_rules_and_theory">PRZEPISY I POJĘCIA</string>
     <string name="titleRulesAndTheoryTextView">Przepisy i pojęcia</string>
     <string name="dosesDefinitionsMainButton">DEFINICJE DAWEK</string>
     <string name="doseLimitsMainButton">DAWKI GRANICZNE</string>
-    <string name="wasteMainButton">ODPADY</string>
-    <string name="glossaryMainButton">SŁOWNICZEK POZOSTAŁYCH POJĘĆ</string>
+    <string name="linksMainButton">WAŻNE ODNOŚNIKI</string>
+    <string name="glossaryMainButton">SŁOWNICZEK POJĘĆ</string>
     <!-- Strings for Calculations -->
     <string name="title_activity_calculations">OBLICZENIA</string>
     <string name="titleCalculationsTextView">Obliczenia</string>
@@ -62,8 +63,8 @@
     <string name="gammaCounterMainButton">KALKULATOR GAMMA</string>
     <!-- Strings for UnitCounter -->
     <string name="title_activity_unit_counter">PRZELICZNIK JEDNOSTEK</string>
-    <string name="mainUnitCalculationTextView">Wybierz rodzaje dawki</string>
-    <string name="enterAmountUnitCounterTextView">Wpisz wartość:</string>
+    <string name="mainUnitCalculationTextView">Wybierz rodzaj dawki</string>
+    <string name="enterAmountUnitCounterTextView">Wpisz wartość</string>
     <string name="chooseUnitTextView">Wybierz jednostkę</string>
     <string name="calculateButton">OBLICZ</string>
     <string name="defaultNumberInEditText">0.0</string>
@@ -74,14 +75,13 @@
     <string name="enterValuesGammaCounterTextView">Wprowadź wartości poszczególnych zmiennych</string>
     <string name="countGammaButton">OBLICZ</string>
     <string name="defaultValueInEditTexts">0</string>
-    <string name="symbol1TextView">Pierwiastek</string>
-    <string name="warningGammaCounterTextView">Uwaga: wynik jest podawany z dokładnością do pięciu miejsc po przecinku.
-    Jeżeli wynik będzie mniejszy od 10^-5, pojawi się domyślna wartość 0</string>
-    <!-- String for InternalExposureForGeneralPopulation -->
-    <string name="title_activity_internal_exposure_for_general_population">OGÓŁ POPULACJI</string>
-    <string name="titleInternalExposureForGP">Radiologiczne narażenie wewnętrzne dla ogółu ludności</string>
-    <string name="chooseWayOfAbsorbingTextView">Wybierz drogę absorbcji</string>
-    <string name="chooseAtomIETextView">Wybierz wchłonięty pierwiastek</string>
+    <string name="symbol1TextView">Nuklid</string>
+    <!-- String for InternalExposureCounter -->
+    <string name="title_activity_internal_exposure_for_general_population">RADIOLOGICZNE NARAŻENIE WEWNĘTRZNE</string>
+    <string name="titleInternalExposureForGP">Radiologiczne narażenie wewnętrzne</string>
+    <string name="chooseCategoryTextView">Wybierz grupę ludności</string>
+    <string name="chooseWayOfAbsorbingTextView">Wybierz drogę absorpcji</string>
+    <string name="chooseAtomIETextView">Wybierz wchłonięty radionuklid</string>
     <string name="enterActivityTextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
     <string name="countInternalExposureButton">OBLICZ</string>
     <!-- String for InternalExposureForEmployees -->
@@ -91,6 +91,32 @@
     <string name="chooseAtomForETextView">Wybierz wchłonięty pierwiastek</string>
     <string name="enterActivityForETextView">Wpisz aktywność pochłoniętego pierwiastka w Bq</string>
     <string name="countInternalExposureForEButton">OBLICZ</string>
-    <string name="title_activity_dictionary">Dictionary</string>
+    <!-- Strings for Dictionary -->
+    <string name="title_activity_dictionary">SŁOWNICZEK</string>
+    <string name="titleDictionaryTextView">Wybierz frazę</string>
+    <!-- String for AddNewValue -->
+    <string name="title_activity_add_new_value">DODAJ WARTOŚĆ e(g)</string>
+    <string name="titleAddNewValue">Dodaj nową wartość e(g)</string>
+    <string name="nameOfNewIsotopeTextView">Wpisz nazwę izotopu:</string>
+    <string name="valueOfNewIsotopeTextView">Wpisz wartość e(g) izotopu:</string>
+    <string name="addNewValueButton">DODAJ</string>
+    <!-- Strings for DoseLimits-->
+    <string name="title_activity_dose_limits">DAWKI GRANICZNE</string>
+    <string name="titleDoseLimitsTextView">Dawki graniczne</string>
+    <string name="chooseSortModeTextView">Wybierz tryb sortowania</string>
+    <string name="chooseParameterToSortTextView">Wybierz parametr do sortowania</string>
+    <string name="showLimitsButton">POKAŻ</string>
+    <!-- Strings for ShowDefinition -->
+    <string name="title_activity_show_definition">DEFINICJA</string>
+    <!-- Strings for Links -->
+    <string name="title_activity_links">WAŻNE ODNOŚNIKI</string>
+    <string name="titleLinksTextView">Ważne odnośniki</string>
+    <string name="toRegulationsTextView">do przepisów:</string>
+    <string name="toWebSitesTextView">do innych, ważnych stron:</string>
+    <!-- String for globals-->
+    <string name="fillInMissingFieldsAlert">Wypełnij brakujące pola!</string>
+    <string name="fillInMissingFieldAlert">Wypełnij brakujące pole!</string>
+    <string name="divideByZeroAlert">Dzielenie przez 0 niedozwolone!</string>
+    <string name="fillInProperlyFieldsAlert">Wypełnij pola poprawnie!</string>
 
 </resources>

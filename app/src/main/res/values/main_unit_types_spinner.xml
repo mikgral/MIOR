@@ -5,15 +5,15 @@
         <item>Dawka pochłonięta</item>
         <item>Równoważnik dawki</item>
         <item>Dawka ekspozycyjna</item>
-        <item>Dawka w powietrzu</item>
     </string-array>
 
     <string-array name="absorbed_dose">
         <item>rad</item>
         <item>mrad</item>
         <item>Gy</item>
-        <item>mGy</item>
-        <item>µGy</item>
+        <item>cGy</item>
+        <item>Sv</item>
+        <item>mSv</item>
     </string-array>
 
     <string-array name="equivalent_dose">
@@ -29,16 +29,25 @@
         <item>mR</item>
         <item>C/kg</item>
         <item>mC/kg</item>
-        <item>µC/kg</item>
-    </string-array>
-
-    <string-array name="in_air_dose">
-        <item>Gy</item>
         <item>cGy</item>
-        <item>mGy</item>
-        <item>Sv</item>
         <item>mSv</item>
-        <item>µSv</item>
     </string-array>
 
+    <!--<string-array name="in_air_dose">-->
+        <!--<item>Gy</item>-->
+        <!--<item>cGy</item>-->
+        <!--<item>mGy</item>-->
+        <!--<item>Sv</item>-->
+        <!--<item>mSv</item>-->
+        <!--<item>µSv</item>-->
+    <!--</string-array>-->
+
+    <string name="warningForAbsorbedDose">*Dawka skuteczna będąca odpowiednikiem dawki
+        pochłoniętej w powietrzu przy założeniu, że narażenie jest równomierne dla
+        całego ciała</string>
+    <string name="warningForExposureDose">*Dawka pochłonięta będąca odpowiednikiem dawki
+        ekspozycyjnej w powietrzu \n
+        **Dawka skuteczna będąca odpowiednikiem dawki
+        ekspozycyjnej w powietrzu przy założeniu, że narażenie jest równomierne dla
+        całego ciała</string>
 </resources>

@@ -20,31 +20,32 @@
         android:gravity="center"
         android:textStyle="bold"/>
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/titleInternalExposureTextView">
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/titleInternalExposureTextView"
+        android:layout_centerHorizontal="true">
 
-        <WebView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/introductionToIEWebView"/>
+            >
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonForIEGP"
-            android:id="@+id/generalPopulationButton"
-            />
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/introductionToIEWebView"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonForIEE"
-            android:id="@+id/employeesButton"
-            android:layout_gravity="center_horizontal"/>
-    </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonForIEGP"
+                android:id="@+id/counterButton"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

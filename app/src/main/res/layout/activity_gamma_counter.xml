@@ -97,7 +97,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="number|numberDecimal"
                     android:ems="10"
                     android:id="@+id/enter1AmountGammaCounterEditText"
                     android:layout_row="1"
@@ -114,7 +114,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="number|numberDecimal"
                     android:ems="10"
                     android:id="@+id/enter2AmountGammaCounterEditText"
                     android:layout_row="2"
@@ -131,7 +131,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="number|numberDecimal"
                     android:ems="10"
                     android:id="@+id/enter3AmountGammaCounterEditText"
                     android:layout_row="3"
@@ -148,7 +148,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="number|numberDecimal"
                     android:ems="10"
                     android:id="@+id/enter4AmountGammaCounterEditText"
                     android:layout_row="4"
@@ -175,7 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/warningGammaCounterTextView"
+                android:id="@+id/moreInfoTextView"
                 android:gravity="center_horizontal|center_vertical"/>
             </LinearLayout>
     </ScrollView>

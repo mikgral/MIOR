@@ -21,16 +21,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/titleRulesAndTheoryTextView"
         android:layout_centerHorizontal="true">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/dosesDefinitionsMainButton"
-            android:id="@+id/dosesDefinitionsMainButton"
-            android:layout_gravity="center_horizontal"/>
 
         <Button
             android:layout_width="match_parent"
@@ -42,8 +35,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/wasteMainButton"
-            android:id="@+id/wasteMainButton"
+            android:text="@string/linksMainButton"
+            android:id="@+id/linksMainButton"
             android:layout_gravity="center_horizontal"/>
 
         <Button

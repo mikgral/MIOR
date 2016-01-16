@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
@@ -83,7 +83,7 @@
                 android:value="com.mikolajgralczyk.calculations.Calculations"/>
         </activity>
         <activity
-            android:name="com.mikolajgralczyk.calculations.InternalExposureForGeneralPopulation"
+            android:name="com.mikolajgralczyk.calculations.InternalExposureCounter"
             android:label="@string/title_activity_internal_exposure_for_general_population"
             android:parentActivityName="com.mikolajgralczyk.calculations.InternalExposure">
             <meta-data
@@ -91,20 +91,49 @@
                 android:value="com.mikolajgralczyk.calculations.InternalExposure"/>
         </activity>
         <activity
-            android:name="com.mikolajgralczyk.calculations.InternalExposureForEmployees"
-            android:label="@string/title_activity_internal_exposure_for_employees"
-            android:parentActivityName="com.mikolajgralczyk.calculations.InternalExposure">
+            android:name="com.mikolajgralczyk.calculations.AddNewValue"
+            android:label="@string/title_activity_add_new_value"
+            android:parentActivityName="com.mikolajgralczyk.calculations.InternalExposureCounter"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mikolajgralczyk.calculations.InternalExposure"/>
+                android:value="com.mikolajgralczyk.calculations.InternalExposureCounter"/>
         </activity>
         <activity
             android:name="com.mikolajgralczyk.theory.Dictionary"
             android:label="@string/title_activity_dictionary"
-            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory">
+            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mikolajgralczyk.theory.RulesAndTheory"/>
+        </activity>
+        <activity
+            android:name="com.mikolajgralczyk.theory.DoseLimits"
+            android:label="@string/title_activity_dose_limits"
+            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.theory.RulesAndTheory"/>
+        </activity>
+        <activity
+            android:name="com.mikolajgralczyk.theory.ShowDefinition"
+            android:label="@string/title_activity_show_definition"
+            android:parentActivityName="com.mikolajgralczyk.theory.Dictionary"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.theory.Dictionary"/>
+        </activity>
+        <activity
+            android:name="com.mikolajgralczyk.theory.Links"
+            android:label="@string/title_activity_links"
+            android:parentActivityName="com.mikolajgralczyk.theory.RulesAndTheory"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mikolajgralczyk.theory.RulesAndTheory"/>>
         </activity>
     </application>
 
